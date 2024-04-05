@@ -26,7 +26,7 @@ For example, the file permissions for <b>project_t.txt</b> are <b>-rw-rw-r--</b>
 
 <h2>Change file permissions</h2>
 The organization determined that other shouldn't have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined <b>project_k.txt</b>  must have the write access removed for other.
-<img src="https://imgur.com/9YAwkSC.png" height="80%" width="80%" alt="File permission"/>
+<img src="https://imgur.com/9YAwkSC.png" height="80%" width="80%" alt="Change file permissions"/>
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The <b>chmod</b> command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the <b>project_t.txt</b> file. After this, I used <b>ls -la</b> to review the updates I made.
 
 
@@ -36,7 +36,7 @@ The research team at my organization recently archived <b>project_t.txt</b> They
 <br />
 The following code demonstrates how I used Linux commands to change the permissions:
 
-<img src="https://imgur.com/OFAMqzM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/OFAMqzM.png" height="80%" width="80%" alt="Change file permissions on a hidden file"/>
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know <b>.project_t.txt</b> is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with <b>u-w</b>. Then, I removed write permissions from the group with <b>g-w</b>, and added read permissions to the group with <b>g+r</b>. 
 
@@ -47,7 +47,7 @@ My organization only wants the <b>researcher2</b> user to have access to the <b>
 <br />
 The following code demonstrates how I used Linux commands to change the permissions:
 
-<img src="https://imgur.com/iSJMUoX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/iSJMUoX.png" height="80%" width="80%" alt="Change directory permissions"/>
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the <b>chmod</b> command to remove them. The  <b>researcher2</b> user already had execute permissions, so they did not need to be added.
 
